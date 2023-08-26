@@ -9,6 +9,7 @@ const RoutineScheme = new mongoose.Schema(
     },
     exercises: [
         {
+            idExercise: Number,
             name: String,
             description: String,
             reps: Number,

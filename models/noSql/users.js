@@ -16,6 +16,12 @@ const UserScheme = new mongoose.Schema(
         type: ['admin', 'user'],
         default: 'user',
     },
+    assignedUsers: [
+        {   
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'users',
+        }
+    ],
     },
     {
         timestamps: true,

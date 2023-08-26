@@ -1,7 +1,7 @@
 
 const express = require('express');
 const router = express.Router();
-const { getItems, getItem, updateItem, createItem, deleteItem } = require('../controllers/routines');
+const { getItems, getItem, updateItem, createItem, deleteItem } = require('../controllers/profile');
 const authMiddleware = require('../middleware/session');
 // const { validatatorCreateItem } = require('../validators/routines');
 
@@ -16,4 +16,3 @@ router.put('/:id', updateItem);
 router.delete('/:id', deleteItem);
 
 module.exports = router;
-
